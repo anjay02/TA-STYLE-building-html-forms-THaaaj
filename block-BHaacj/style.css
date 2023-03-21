@@ -1,0 +1,450 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom styles */
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+   
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0px auto;
+    
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/*header*/
+
+.header{
+    background-color: #fff;
+    padding: 40px;
+}
+.brand span{
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.navbar a{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-right: 42px;
+    color: black;
+}
+.navbar .active{
+    color: #69c6ba;
+}
+
+/*hero-section*/
+
+.hero-section .container{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(assets/banner.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 50px 50px 50px;
+}
+.hero-section h1{
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.hero-section p{
+    font-size: 32px;
+    color: #cdcfcf;
+}
+.fa-chevron-circle-down{
+    font-size: 48px;
+    color: #69c6ba;
+    margin-top: 16px;
+    font-weight: 700;
+}
+.row{
+    padding: 30px 30px 40px 30px;
+    margin: 100px 225px 30px 225px;
+    background-color: #E6E6E6;
+    color: gray;
+}
+.row-1-2{
+    margin-bottom: 42px;
+}
+.row-1-2 .column-1-2{
+    width: 50%; 
+}
+.row-1-2 .column-2-2{
+    width: 50%;
+    
+}
+.row-1-2 .col-2-2{
+    width: 20%;
+} 
+.row-1-2 .column-2-2-1-3{
+    width: 50%;
+}
+.col-2-2 span{
+    font-size: 14px;
+}
+
+.row-2-2  .column-1-3{
+    width: 50%;
+} 
+.column-2-2 .fas{
+    display: block;
+   line-height: 0.5;
+}
+.row h6{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.column-1-2 p{
+    font-size: 18px;
+    color: #A5ABB0;
+}
+.column-2-2 p{
+    font-size: 18px;
+    color: #545a62;
+}
+.row-2-2  span{
+    text-transform: capitalize;
+}
+.check-btn{
+    width: 50%;
+}
+.check-btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #69c6ba;
+    padding: 10px 50px;
+}
+
+/**section-2**/
+
+.section-2 .container{
+    text-align: center;
+    background-color: #e0dfdf;
+    padding: 75px 0;
+}
+.section-2 h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    color: #212529;
+    margin-bottom: 18px;
+}
+.section-2 strong{
+    font-weight: 700;
+}
+.section-2 p{
+    text-transform: capitalize;
+    color: #696c6f;
+}
+.section-2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #69c6ba;
+    padding:10px 20px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 36px;
+   
+}
+
+/**section-3**/
+
+.article{
+    background-color: #fff;
+}
+.article .fas{
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+    font-size: 24px;
+    color: #e9dfdf;
+}
+.article h3{
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.article a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #68c6ba;
+    display: inline-block;
+    background-color: #fff;
+    padding: 12px 16px;
+    margin-top: 18px;
+}
+.article-text p{
+    color: #dae7e7;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.article .article-content{
+    width: 50%;
+    padding:  36px 60px;
+}
+.article-1-3 .article-content{
+   position: relative;
+   right: 60px;
+   background-color: #68C6BA;
+}
+.article-1-3 .caret{
+    position:absolute;
+    left: -126px;
+}
+.article-2-3 .article-content{
+    position: relative;
+    left: 60px;
+    background-color: #C66994;
+}
+.article-2-3 .caret{
+    position:absolute;
+    right: -126px;}   
+
+/* Article-3-4 */
+
+.article-3-3  .article-content{
+    position: relative;
+    right: 60px;
+    background-color: #68C6BA;
+}
+.article-3-3 .caret{
+    position:absolute;
+    left: -126px;
+}
+/* section-04 */
+
+.section-04 .container{
+    background-color: #ffff;
+}
+.map{
+    padding-bottom: 50px;
+}   
+.map a{
+    width:14.28%;
+    padding: 24px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    height: 185px;
+    background-color:#68C6BA ;
+}
+.map span{
+    display: block;
+}
+.map img{
+    width: 90%;
+    height: 80%;   
+}
+.map .map-asia{
+    background-color:#C66994 ;
+}
+/* Article (Asia) */
+.asia {
+    width: 1000px;
+    height: 200px;
+    margin: 36px auto;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.asia .img-06 {
+    width: 28%;
+    height: 100%;   
+}
+.asia .img-06 img{
+    width: 100%;
+    height: 100%;
+    
+}
+.asia .text{
+    width: 50%;
+    height: 100%;
+    padding: 24px;
+    box-shadow: 3px 0px 0px 1px rgb(247, 244, 244);
+}
+.asia .text h4{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.asia .text span{
+    margin: 16px 0px;
+    display: block;
+    color:#C66994 ;
+
+}
+.asia .text p{
+    color: #9ca8a8;
+}
+.cost-btn{
+    width: 22%;
+    height: 100%;
+    background-color: #68C6BA;
+}
+.cost{
+    margin: 0px auto;
+    text-align: center;
+    
+}
+.cost span{
+    display: block;
+    font-size: 26px;
+    color: #ffff;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+.cost a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.more-places{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.more-places a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #68C6BA;
+    display: inline-block;
+    color:#ffff ;
+    padding: 12px 16px;}
+
+.map-form-cont{
+    position: relative;
+}
+.map-cont {
+    height: 600px;
+}
+
+form{
+    
+    width: 500px;
+    height: 435px;
+    padding: 24px;
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    background-color: #ffff;
+   
+}
+.name, .email{
+    width: 49%;
+    padding: 16px;
+    background-color: #F5F5F5;
+    border: 0;
+    border-radius: 2px;
+    
+}
+.subject{
+    display: block;
+    width: 100%;
+    margin: 16px 0px;
+    padding: 16px;
+    background-color: #F5F5F5;
+    border: 0;
+    border-radius: 2px;
+}    
+textarea{
+    width: 100%;
+    padding: 16px;
+    background-color: #F5F5F5;
+    border: 0;
+    border-radius: 2px;
+}
+.button{
+    text-transform: uppercase;
+    width: 100%;
+    margin: 16px 0px;
+    padding: 16px;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    background-color: #68C6BA;}
+.footer{
+    text-align: center;
+    padding: 36px;
+    color: #ffff;
+    background-color: #68C6BA;
+}
+    
